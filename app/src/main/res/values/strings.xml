@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Jasmine Creation</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_add_new">Add New</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="action_update">Update</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_share">Share</string>
+    <string name="action_sync_out">Cloud Sync Out</string>
+    <string name="action_sync_in">Cloud Sync In</string>
+</resources>
