@@ -623,6 +623,96 @@
             android:background="@color/colorDivider" />
 
         <TableRow
+            android:id="@+id/tableRowPAJAMI1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/textViewPAJAMI1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="1."
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_medium" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDivider" />
+
+        <TableRow
+            android:id="@+id/tableRowPAJAMI2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2."
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/textViewPAJAMI2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="2."
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_medium" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDivider" />
+
+        <TableRow
+            android:id="@+id/tableRowPAJAMI3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3."
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/textViewPAJAMI3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="3."
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_medium" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDivider" />
+
+        <TableRow
             android:id="@+id/tableRowR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

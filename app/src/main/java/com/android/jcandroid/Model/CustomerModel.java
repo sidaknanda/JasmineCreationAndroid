@@ -27,6 +27,9 @@ public class CustomerModel implements Parcelable {
     public String trouser;
     public String thg;
     public String pajami;
+    public String pajami1;
+    public String pajami2;
+    public String pajami3;
     public String r;
     public String br;
     public String wr;
@@ -35,6 +38,30 @@ public class CustomerModel implements Parcelable {
     public String extraComments;
 
     public CustomerModel() {
+    }
+
+    public String getPajami3() {
+        return pajami3;
+    }
+
+    public void setPajami3(String pajami3) {
+        this.pajami3 = pajami3;
+    }
+
+    public String getPajami1() {
+        return pajami1;
+    }
+
+    public void setPajami1(String pajami1) {
+        this.pajami1 = pajami1;
+    }
+
+    public String getPajami2() {
+        return pajami2;
+    }
+
+    public void setPajami2(String pajami2) {
+        this.pajami2 = pajami2;
     }
 
     public String getExtraComments() {
@@ -266,6 +293,9 @@ public class CustomerModel implements Parcelable {
         trouser = in.readString();
         thg = in.readString();
         pajami = in.readString();
+        pajami1 = in.readString();
+        pajami2 = in.readString();
+        pajami3 = in.readString();
         r = in.readString();
         br = in.readString();
         wr = in.readString();
@@ -301,6 +331,9 @@ public class CustomerModel implements Parcelable {
         dest.writeString(trouser);
         dest.writeString(thg);
         dest.writeString(pajami);
+        dest.writeString(pajami1);
+        dest.writeString(pajami2);
+        dest.writeString(pajami3);
         dest.writeString(r);
         dest.writeString(br);
         dest.writeString(wr);

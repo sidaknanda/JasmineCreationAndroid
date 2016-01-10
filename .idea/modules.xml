@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JCAndroid.iml" filepath="$PROJECT_DIR$/JCAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JasmineCreationAndroid.iml" filepath="$PROJECT_DIR$/JasmineCreationAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

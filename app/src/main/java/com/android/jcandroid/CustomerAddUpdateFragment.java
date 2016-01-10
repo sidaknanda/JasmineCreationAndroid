@@ -16,8 +16,8 @@ import com.android.jcandroid.Model.CustomerModel;
 public class CustomerAddUpdateFragment extends Fragment implements View.OnClickListener {
 
     private Button buttonSave;
-    private EditText et_Name, et_Phone, et_Address, et_L, et_C, et_W, et_H, et_T, et_S, et_B, et_M, et_NF, et_NB, et_CHK, et_GHR, et_SLVR, et_P, et_TROUSER, et_THG, et_PAJAMI, et_R, et_BR, et_WR, et_RW, et_RH, et_ExtraComments;
-    private String string_Name, string_Phone, string_Address, string_L, string_C, string_W, string_H, string_T, string_S, string_B, string_M, string_NF, string_NB, string_CHK, string_GHR, string_SLVR, string_P, string_TROUSER, string_THG, string_PAJAMI, string_R, string_BR, string_WR, string_RW, string_RH, string_ExtraComments;
+    private EditText et_Name, et_Phone, et_Address, et_L, et_C, et_W, et_H, et_T, et_S, et_B, et_M, et_NF, et_NB, et_CHK, et_GHR, et_SLVR, et_P, et_TROUSER, et_THG, et_PAJAMI, et_PAJAMI1, et_PAJAMI2, et_PAJAMI3, et_R, et_BR, et_WR, et_RW, et_RH, et_ExtraComments;
+    private String string_Name, string_Phone, string_Address, string_L, string_C, string_W, string_H, string_T, string_S, string_B, string_M, string_NF, string_NB, string_CHK, string_GHR, string_SLVR, string_P, string_TROUSER, string_THG, string_PAJAMI, string_PAJAMI1, string_PAJAMI2, string_PAJAMI3, string_R, string_BR, string_WR, string_RW, string_RH, string_ExtraComments;
     private CustomerModel customer;
 
     @Nullable
@@ -48,6 +48,9 @@ public class CustomerAddUpdateFragment extends Fragment implements View.OnClickL
         et_TROUSER = (EditText) view.findViewById(R.id.editTextTROUSER);
         et_THG = (EditText) view.findViewById(R.id.editTextTHG);
         et_PAJAMI = (EditText) view.findViewById(R.id.editTextPAJAMI);
+        et_PAJAMI1 = (EditText) view.findViewById(R.id.editTextPAJAMI1);
+        et_PAJAMI2 = (EditText) view.findViewById(R.id.editTextPAJAMI2);
+        et_PAJAMI3 = (EditText) view.findViewById(R.id.editTextPAJAMI3);
         et_R = (EditText) view.findViewById(R.id.editTextR);
         et_BR = (EditText) view.findViewById(R.id.editTextBR);
         et_WR = (EditText) view.findViewById(R.id.editTextWR);
@@ -90,6 +93,9 @@ public class CustomerAddUpdateFragment extends Fragment implements View.OnClickL
         et_TROUSER.setText(customer.getTrouser());
         et_THG.setText(customer.getThg());
         et_PAJAMI.setText(customer.getPajami());
+        et_PAJAMI1.setText(customer.getPajami1());
+        et_PAJAMI2.setText(customer.getPajami2());
+        et_PAJAMI3.setText(customer.getPajami3());
         et_R.setText(customer.getR());
         et_BR.setText(customer.getBr());
         et_WR.setText(customer.getWr());
@@ -121,6 +127,9 @@ public class CustomerAddUpdateFragment extends Fragment implements View.OnClickL
             string_TROUSER = et_TROUSER.getText().toString();
             string_THG = et_THG.getText().toString();
             string_PAJAMI = et_PAJAMI.getText().toString();
+            string_PAJAMI1 = et_PAJAMI1.getText().toString();
+            string_PAJAMI2 = et_PAJAMI2.getText().toString();
+            string_PAJAMI3 = et_PAJAMI3.getText().toString();
             string_R = et_R.getText().toString();
             string_BR = et_BR.getText().toString();
             string_WR = et_WR.getText().toString();
@@ -150,6 +159,9 @@ public class CustomerAddUpdateFragment extends Fragment implements View.OnClickL
                 model.setTrouser(string_TROUSER);
                 model.setThg(string_THG);
                 model.setPajami(string_PAJAMI);
+                model.setPajami1(string_PAJAMI1);
+                model.setPajami2(string_PAJAMI2);
+                model.setPajami3(string_PAJAMI3);
                 model.setR(string_R);
                 model.setBr(string_BR);
                 model.setWr(string_WR);

@@ -238,6 +238,9 @@ public class CloudSyncInActivity extends AppCompatActivity {
                 model.setTrouser(tempList.get(i).get("TROUSER"));
                 model.setThg(tempList.get(i).get("THG"));
                 model.setPajami(tempList.get(i).get("PAJAMI"));
+                model.setPajami1(tempList.get(i).get("1"));
+                model.setPajami2(tempList.get(i).get("2"));
+                model.setPajami3(tempList.get(i).get("3"));
                 model.setR(tempList.get(i).get("R"));
                 model.setBr(tempList.get(i).get("BR"));
                 model.setWr(tempList.get(i).get("WR"));
@@ -288,6 +291,7 @@ public class CloudSyncInActivity extends AppCompatActivity {
             mProgress.hide();
             if (output == null || output.size() == 0) {
                 textView.setText("No results returned.");
+                DAO.createCustomerTableFromList(output, getApplicationContext());
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             } else {
                 DAO.createCustomerTableFromList(output, getApplicationContext());

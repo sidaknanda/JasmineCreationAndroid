@@ -35,6 +35,9 @@ public class DAO {
         contentValues.put(DBHelper.COLUMN_TROUSER, customer.getTrouser());
         contentValues.put(DBHelper.COLUMN_THG, customer.getThg());
         contentValues.put(DBHelper.COLUMN_PAJAMI, customer.getPajami());
+        contentValues.put(DBHelper.COLUMN_PAJAMI1, customer.getPajami1());
+        contentValues.put(DBHelper.COLUMN_PAJAMI2, customer.getPajami2());
+        contentValues.put(DBHelper.COLUMN_PAJAMI3, customer.getPajami3());
         contentValues.put(DBHelper.COLUMN_R, customer.getR());
         contentValues.put(DBHelper.COLUMN_BR, customer.getBr());
         contentValues.put(DBHelper.COLUMN_WR, customer.getWr());
@@ -85,6 +88,9 @@ public class DAO {
         model.setTrouser(cursor.getString(cursor.getColumnIndex(DBHelper.COLUMN_TROUSER)));
         model.setThg(cursor.getString(cursor.getColumnIndex(DBHelper.COLUMN_THG)));
         model.setPajami(cursor.getString(cursor.getColumnIndex(DBHelper.COLUMN_PAJAMI)));
+        model.setPajami1(cursor.getString(cursor.getColumnIndex(DBHelper.COLUMN_PAJAMI1)));
+        model.setPajami2(cursor.getString(cursor.getColumnIndex(DBHelper.COLUMN_PAJAMI2)));
+        model.setPajami3(cursor.getString(cursor.getColumnIndex(DBHelper.COLUMN_PAJAMI3)));
         model.setR(cursor.getString(cursor.getColumnIndex(DBHelper.COLUMN_R)));
         model.setBr(cursor.getString(cursor.getColumnIndex(DBHelper.COLUMN_BR)));
         model.setWr(cursor.getString(cursor.getColumnIndex(DBHelper.COLUMN_WR)));
@@ -127,6 +133,9 @@ public class DAO {
         contentValues.put(DBHelper.COLUMN_TROUSER, customer.getTrouser());
         contentValues.put(DBHelper.COLUMN_THG, customer.getThg());
         contentValues.put(DBHelper.COLUMN_PAJAMI, customer.getPajami());
+        contentValues.put(DBHelper.COLUMN_PAJAMI1, customer.getPajami1());
+        contentValues.put(DBHelper.COLUMN_PAJAMI2, customer.getPajami2());
+        contentValues.put(DBHelper.COLUMN_PAJAMI3, customer.getPajami3());
         contentValues.put(DBHelper.COLUMN_R, customer.getR());
         contentValues.put(DBHelper.COLUMN_BR, customer.getBr());
         contentValues.put(DBHelper.COLUMN_WR, customer.getWr());
@@ -180,6 +189,9 @@ public class DAO {
             content.put(DBHelper.COLUMN_TROUSER, item.getTrouser());
             content.put(DBHelper.COLUMN_THG, item.getThg());
             content.put(DBHelper.COLUMN_PAJAMI, item.getPajami());
+            content.put(DBHelper.COLUMN_PAJAMI1, item.getPajami1());
+            content.put(DBHelper.COLUMN_PAJAMI2, item.getPajami2());
+            content.put(DBHelper.COLUMN_PAJAMI3, item.getPajami3());
             content.put(DBHelper.COLUMN_R, item.getR());
             content.put(DBHelper.COLUMN_BR, item.getBr());
             content.put(DBHelper.COLUMN_WR, item.getWr());

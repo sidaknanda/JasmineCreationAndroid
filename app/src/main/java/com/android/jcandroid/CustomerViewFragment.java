@@ -13,7 +13,7 @@ import com.android.jcandroid.Model.CustomerModel;
 public class CustomerViewFragment extends Fragment {
 
     private CustomerModel customer;
-    private TextView tv_Name, tv_Phone, tv_Address, tv_L, tv_C, tv_W, tv_H, tv_T, tv_S, tv_B, tv_M, tv_NF, tv_NB, tv_CHK, tv_GHR, tv_SLVR, tv_P, tv_TROUSER, tv_THG, tv_PAJAMI, tv_R, tv_BR, tv_WR, tv_RW, tv_RH, tv_ExtraComments;
+    private TextView tv_Name, tv_Phone, tv_Address, tv_L, tv_C, tv_W, tv_H, tv_T, tv_S, tv_B, tv_M, tv_NF, tv_NB, tv_CHK, tv_GHR, tv_SLVR, tv_P, tv_TROUSER, tv_THG, tv_PAJAMI, tv_PAJAMI1, tv_PAJAMI2, tv_PAJAMI3, tv_R, tv_BR, tv_WR, tv_RW, tv_RH, tv_ExtraComments;
 
     @Nullable
     @Override
@@ -40,6 +40,9 @@ public class CustomerViewFragment extends Fragment {
         tv_TROUSER = (TextView) view.findViewById(R.id.textViewTROUSER);
         tv_THG = (TextView) view.findViewById(R.id.textViewTHG);
         tv_PAJAMI = (TextView) view.findViewById(R.id.textViewPAJAMI);
+        tv_PAJAMI1 = (TextView) view.findViewById(R.id.textViewPAJAMI1);
+        tv_PAJAMI2 = (TextView) view.findViewById(R.id.textViewPAJAMI2);
+        tv_PAJAMI3 = (TextView) view.findViewById(R.id.textViewPAJAMI3);
         tv_R = (TextView) view.findViewById(R.id.textViewR);
         tv_BR = (TextView) view.findViewById(R.id.textViewBR);
         tv_WR = (TextView) view.findViewById(R.id.textViewWR);
@@ -75,6 +78,9 @@ public class CustomerViewFragment extends Fragment {
         tv_TROUSER.setText(customer.getTrouser());
         tv_THG.setText(customer.getThg());
         tv_PAJAMI.setText(customer.getPajami());
+        tv_PAJAMI1.setText(customer.getPajami1());
+        tv_PAJAMI2.setText(customer.getPajami2());
+        tv_PAJAMI3.setText(customer.getPajami3());
         tv_R.setText(customer.getR());
         tv_BR.setText(customer.getBr());
         tv_WR.setText(customer.getWr());

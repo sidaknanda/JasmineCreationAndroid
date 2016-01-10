@@ -27,6 +27,9 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String COLUMN_TROUSER = "TROUSER";
     public static final String COLUMN_THG = "THG";
     public static final String COLUMN_PAJAMI = "PAJAMI";
+    public static final String COLUMN_PAJAMI1 = "PAJAMI1";
+    public static final String COLUMN_PAJAMI2 = "PAJAMI2";
+    public static final String COLUMN_PAJAMI3 = "PAJAMI3";
     public static final String COLUMN_R = "R";
     public static final String COLUMN_BR = "BR";
     public static final String COLUMN_WR = "WR";
@@ -61,6 +64,9 @@ public class DBHelper extends SQLiteOpenHelper {
             + COLUMN_TROUSER + " VARCHAR(255), "
             + COLUMN_THG + " VARCHAR(255), "
             + COLUMN_PAJAMI + " VARCHAR(255), "
+            + COLUMN_PAJAMI1 + " VARCHAR(255), "
+            + COLUMN_PAJAMI2 + " VARCHAR(255), "
+            + COLUMN_PAJAMI3 + " VARCHAR(255), "
             + COLUMN_R + " VARCHAR(255), "
             + COLUMN_BR + " VARCHAR(255), "
             + COLUMN_WR + " VARCHAR(255), "
