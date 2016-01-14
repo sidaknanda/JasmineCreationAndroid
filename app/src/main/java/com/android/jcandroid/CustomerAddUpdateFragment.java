@@ -171,7 +171,7 @@ public class CustomerAddUpdateFragment extends Fragment implements View.OnClickL
 
                 boolean status;
                 if (customer != null) {
-                    status = DAO.updateCustomer(getActivity(), model);
+                    status = DAO.updateCustomer(getActivity(), model, DAO.getRowId(getActivity(), customer));
                 } else {
                     status = DAO.createCustomer(getActivity(), model);
                 }

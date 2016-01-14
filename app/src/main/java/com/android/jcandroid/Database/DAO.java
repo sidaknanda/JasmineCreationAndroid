@@ -108,8 +108,7 @@ public class DAO {
         return (status != 0);
     }
 
-    public static boolean updateCustomer(Context context, CustomerModel customer) {
-        int rowId = getRowId(context, customer);
+    public static boolean updateCustomer(Context context, CustomerModel customer, int rowId) {
         DBHelper helper = new DBHelper(context);
         SQLiteDatabase database = helper.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -147,7 +146,7 @@ public class DAO {
         return (status != 0);
     }
 
-    private static int getRowId(Context context, CustomerModel customer) {
+    public static int getRowId(Context context, CustomerModel customer) {
         int rowId = 0;
         DBHelper helper = new DBHelper(context);
         SQLiteDatabase database = helper.getWritableDatabase();
